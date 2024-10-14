@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Projects</title>
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Project Section -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">My Projects</h2>
+  <div class="row">
+    <!-- First Project: FORM LOGIN -->
+    <div class="col-md-4 text-center project">
+      <img src="ss project/form-login.png" alt="Form Login" class="project-img" data-toggle="modal" data-target="#projectModal" data-img-src="ss project/form-login.png">
+      <h5>FORM LOGIN</h5>
+      <a href="form login/index.html" target="_blank" class="btn btn-link">View Project</a>
+    </div>
+    <!-- Second Project: KALKULATOR -->
+    <div class="col-md-4 text-center project">
+      <img src="ss project/Kalkulator.png" alt="Kalkulator" class="project-img" data-toggle="modal" data-target="#projectModal" data-img-src="ss project/Kalkulator.png">
+      <h5>KALKULATOR</h5>
+      <a href="kalkulator/index.html" target="_blank" class="btn btn-link">View Project</a>
+    </div>
+    <!-- Third Project -->
+    <div class="col-md-4 text-center project">
+      <img src="images/project3.jpg" alt="Project 3" class="project-img" data-toggle="modal" data-target="#projectModal" data-img-src="images/project3.jpg">
+      <h5>Project 3</h5>
+      <a href="projects/project3/index.html" target="_blank" class="btn btn-link">View Project</a>
+    </div>
+  </div>
+  <!-- Back Button -->
+  <div class="text-center mt-4">
+    <button class="btn btn-primary" id="backButton">Back</button>
+  </div>
+</div>
+
+<!-- Modal for showing project image -->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModalLabel">Project Image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Project" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="projects.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .password-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .password-container input {
+            width: 100%;
+            padding-right: 40px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="form login">
+            <header>Form Login</header>
+            <form action="#">
+                <input type="text" placeholder="Email" required/>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password" required/>
+                    <span class="toggle-password" onclick="togglePassword()">🫣</span>
+                </div>
+                <a href="#">Lupa Password?</a>
+                <input type="submit" value="Login">
+            </form>
+        </div> 
+        <script>
+            function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const passwordIcon = document.querySelector('.toggle-password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.textContent = '🤗'; 
+            } else {
+                passwordInput.type = 'password';
+                passwordIcon.textContent = '🫣'; 
+            }
+        }
+        </script>
+</body>

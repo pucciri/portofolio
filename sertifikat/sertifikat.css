@@ -1,0 +1,43 @@
+.certificate img {
+  width: 100%;
+  height: auto; /* Memastikan gambar tetap proporsional */
+  object-fit: cover; /* Menyesuaikan gambar sesuai dengan ukuran yang ada tanpa merusak proporsi */
+  border-radius: 10px; /* Memberikan sedikit lengkungan pada sudut gambar */
+  transition: transform 0.3s ease-in-out; /* Menambahkan animasi ketika gambar di-hover */
+}
+
+.certificate {
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out; /* Animasi pada kontainer saat di-hover */
+}
+
+.certificate:hover img {
+  transform: scale(1.05); /* Zoom-in gambar ketika di-hover */
+}
+
+.certificate:hover {
+  transform: translateY(-10px); /* Efek hover mengangkat kotak sertifikat */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat di-hover */
+}
+
+.text-center h5, .text-center p {
+  margin-top: 10px;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .certificate {
+    margin-bottom: 15px;
+  }
+} 

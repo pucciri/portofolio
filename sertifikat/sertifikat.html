@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Certificates</title>
+  <link rel="stylesheet" href="sertifikat.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Certificate Section -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">My Certificates</h2>
+  <div class="row">
+    <!-- First Certificate -->
+    <div class="col-md-4 text-center certificate">
+      <img src="/images/html.jpg" alt="Certificate 1">
+      <h5>Introduction to HTML</h5>
+      <a href="https://www.sololearn.com/certificates/CC-V9JBSRY5" target="_blank" class="btn btn-link">View on SoloLearn</a>
+    </div>
+    <!-- Second Certificate -->
+    <div class="col-md-4 text-center certificate">
+      <img src="/images/css.jpg" alt="Certificate 2">
+      <h5>Introduction to CSS</h5>
+      <a href="https://www.sololearn.com/certificates/CC-AJQSGBSY" target="_blank" class="btn btn-link">View on SoloLearn</a>
+    </div>
+    <!-- Third Certificate -->
+    <div class="col-md-4 text-center certificate">
+      <img src="/images/js.jpg" alt="Certificate 3">
+      <h5>Introduction to JavaScript</h5>
+      <a href="https://www.sololearn.com/certificates/CC-WLMBXWIR" target="_blank" class="btn btn-link">View on SoloLearn</a>
+    </div>
+  </div>
+  <!-- Back Button -->
+  <div class="text-center mt-4">
+    <button class="btn btn-primary" id="backButton">Back</button>
+  </div>
+</div>
+
+<!-- Modal for showing certificate -->
+<div class="modal fade" id="certificateModal" tabindex="-1" role="dialog" aria-labelledby="certificateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Certificate" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="sertifikat.js"></script>
+
+</body>
+</html>
